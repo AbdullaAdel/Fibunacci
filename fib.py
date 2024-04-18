@@ -18,3 +18,5 @@ for i in range(nterms):
     
     print('THIS IS A BRANCH')
     print('THIS IS MERGING TIME')
+
+    print('Done Merging')
