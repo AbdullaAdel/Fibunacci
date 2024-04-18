@@ -2,15 +2,16 @@
 
 nterms = int(input('How many terms?\n'))
 
-n1, n2 = 0 , 1
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
 
+n1, n2 = 0 , 1
 count = 0
 
 print('fib sequence: ')
-while count < nterms:
-    print(n1)
-    nth = n1 + n2
-    n1 = n2
-    n2 = nth
-    
-    count += 1
+
+for i in range(nterms):
+    print(fibonacci(i))
